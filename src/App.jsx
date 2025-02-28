@@ -1,7 +1,6 @@
-import './App.css'
+import "./App.css"
 
-
-function MeowFocu_home() {
+function App() {
 
   return (
     <>
