@@ -1,0 +1,65 @@
+/* 
+   Selettore :root
+   ----------------
+   Questo selettore rappresenta l'elemento radice del documento (tipicamente l'elemento <html>).
+   Viene utilizzato per definire stili e variabili CSS globali.
+*/
+:root {
+    /* Imposta la famiglia di caratteri per l'intero documento.
+       Verrà utilizzata la prima famiglia disponibile nell'elenco. */
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    
+    /* Definisce l'altezza della linea per migliorare la leggibilità del testo. */
+    line-height: 1.5;
+    
+    /* Imposta il peso del font a 400, corrispondente a un font normale. */
+    font-weight: 400;
+  
+    /* Abilita il supporto per temi chiari e scuri in base alle preferenze dell'utente. */
+    color-scheme: light dark;
+    
+    /* Palette basata su tonalità di viola */
+    --primary-color: #7603E2;    /* Viola intenso */
+    --secondary-color: #52128E;  /* Viola medio */
+    --accent-color: #8242BD;     /* Lavanda chiara */
+    --background-color: #CDAEAD; /* Viola pallido */
+    --text-color: #EDDAFD;       /* Viola scuro */
+    
+    /* Imposta il colore del testo e lo sfondo utilizzando le variabili della palette */
+    color: var(--text-color);
+    background-color: var(--background-color);
+  
+    /* Disabilita la sintesi automatica del font per evitare variazioni non desiderate come grassetto o corsivo. */
+    font-synthesis: none;
+    
+    /* Migliora la leggibilità del testo attivando l'ottimizzazione della resa del testo. */
+    text-rendering: optimizeLegibility;
+    
+    /* Abilita l'anticiasing per i font sui browser basati su WebKit, rendendo il testo più nitido. */
+    -webkit-font-smoothing: antialiased;
+    
+    /* Applica l'anticiasing sui sistemi macOS per i browser basati su Mozilla. */
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* 
+     Selettore body
+     ---------------
+     Definisce lo stile dell'elemento body, il contenitore principale del contenuto della pagina.
+  */
+  body {
+    /* Rimuove il margine predefinito per evitare spazi indesiderati intorno al contenuto. */
+    margin: 0;
+    
+    /* Utilizza il layout flexbox per facilitare l'allineamento e la distribuzione degli elementi interni. */
+    display: flex;
+    
+    /* Centra gli elementi figlio sia orizzontalmente che verticalmente. */
+    place-items: center;
+    
+    /* Imposta una larghezza minima per garantire una corretta visualizzazione su dispositivi con schermi piccoli. */
+    min-width: 320px;
+    
+    /* Imposta un'altezza minima pari al 100% dell'altezza della viewport per occupare l'intero schermo. */
+    min-height: 100vh;
+  }

@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+
+/* 
+   Selettore #root
+   ----------------
+   Si applica all'elemento con l'id "root", contenitore principale dell'applicazione.
+*/
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 600px;
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.SessioneAttiva{
+  color: #4E3984;
+}
+.SessioneAttiva-wrapper {
+  position: fixed;           /* Fissa la sidebar in posizione */
+  top: 50%;                  /* Posiziona verticalmente al 50% della viewport */
+  left: 60px;                /* Stacca la sidebar dal bordo sinistro */
+  transform: translateY(-50%);  /* Centra verticalmente il rettangolo */
+  width: 250px;              /* Larghezza fissa del rettangolo */
+  height: 400px;             /* Altezza fissa */
+  border: 2px solid #868585; /* Bordo con il colore desiderato */
+  border-radius: 10px;       /* Angoli stondati */
+  padding: 20px;             /* Spazio interno */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombreggiatura per effetto */
+  text-align: center;        /* Centra il contenuto orizzontalmente */
+  overflow-y: auto;          /* Abilita lo scrolling verticale se il contenuto supera l'altezza fissata */
+  font-size: 25px;
+  color: black;
+}
+
+.NomeProgetto {
+  position: absolute;    /* Posiziona l'elemento in maniera assoluta rispetto al body */
+  top: 0;                /* Posiziona l'elemento in alto */
+  left: 50%;             /* Posiziona l'elemento orizzontalmente a metà della viewport */
+  transform: translateX(-50%); /* Centra l'elemento sottraendo la metà della sua larghezza */
+  width: 100%;           /* Facoltativo: imposta una larghezza per garantire il centramento */
+  text-align: center;    /* Centra il testo al suo interno */
+  font-size: 100px;       /* Aumenta la dimensione del font */
+  color: #4E3984;
+  margin-right: 2000px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* Centra l'intero contenitore */
+  width: 100%; /* Assicura che l'area sia utilizzata */
+}
+
+.button-container {
+  display: flex;
+  gap: 50px; /* Spazio tra i pulsanti */
+}
+
+button {
+  background-color: #4E3984; /* Viola intenso per il pulsante */
+  color: #ffffff;            /* Testo bianco */
+  border: none;                /* Non ci voglio bordi nel pulsante*/
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
